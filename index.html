@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bergsig Cricket Club - 6-a-Side Tournament Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      margin: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+    }
+    button {
+      background: #1d7bf0;
+      color: white;
+      padding: 12px;
+      border: none;
+      width: 100%;
+      margin-top: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #145db8;
+    }
+    .info-box {
+      background: #e8f2ff;
+      padding: 15px;
+      border-left: 5px solid #1d7bf0;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Bergsig Cricket Club</h1>
+  <h2>6-a-Side Tournament Registration</h2>
+
+  <div class="info-box">
+    <p><strong>Date:</strong> 16 December 2025  
+    <br><strong>Entry Fee:</strong> R1200 per team  
+    <br><strong>Team Format:</strong> 3 club players + 3 non-club players (max squad size: 8)  
+    <br><strong>Prizes:</strong>  
+    <br>• Winners: R3000  
+    <br>• Runners-up: R1500  
+    <br>• Plate Winners: Beer prize 🍻  
+    <br><br><strong>Payment:</strong> Pay at Bergsig Cricket Club  
+    <br><strong>NOTE:</strong> First 10–15 teams to pay are guaranteed entry.</p>
+  </div>
+
+  <form action="https://formspree.io/f/mxyzabcd" method="POST">
+    <!-- Replace the endpoint ^ with your Formspree link -->
+    
+    <label>Team Name</label>
+    <input type="text" name="Team Name" required>
+
+    <label>Team Captain Full Name</label>
+    <input type="text" name="Captain Name" required>
+
+    <label>Captain Phone Number (WhatsApp)</label>
+    <input type="text" name="Captain Phone" required>
+
+    <label>Email (optional)</label>
+    <input type="email" name="Email">
+
+    <label>Player List (Note club / non-club)</label>
+    <textarea name="Players" rows="8" placeholder="Example:
+Player 1 - Club
+Player 2 - Non-club
+Player 3 - Club
+Player 4 - Non-club
+Player 5 - Club
+Player 6 - Non-club
+Player 7 - Optional
+Player 8 - Optional" required></textarea>
+
+    <label>Proof of Payment (Paste link to screenshot or type ‘Will send on WhatsApp’)</label>
+    <input type="text" name="Proof of Payment" placeholder="Link to image OR will send on WhatsApp">
+
+    <label>
+      <input type="checkbox" name="Rules Confirmed" required>
+      I confirm my team follows the rules (3 club + 3 non-club players).
+    </label>
+
+    <button type="submit">Submit Registration</button>
+  </form>
+</div>
+
+</body>
+</html>
